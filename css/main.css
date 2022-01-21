@@ -1,0 +1,496 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+body {
+    font-family:"Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
+}
+
+h2 {
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    border: none;
+    padding: 10px 50px;
+    cursor: pointer;
+    background-color: #f59649;
+    color: #fff;
+}
+
+@media only screen and (max-width: 450px) {
+    button {
+        padding: 10px 40px;
+    }
+}
+
+button:hover {
+    background-color: #ff6e3e;
+}
+
+/*解决子元素浮动之后父元素坍缩的方法*/
+.clear-fix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.wrapper {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.sub-heading {
+    margin-top: 40px;
+    line-height: 25px;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 450px) {
+    .sub-heading {
+        line-height: 20px;
+        font-size: 0.8em;
+    }
+}
+
+.main-wrapper {
+    background: url(../images/banner.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+@media only screen and (max-width: 500px){
+    .main-wrapper {
+        /*background: #9a647e;*/
+        background: url(../images/banner-sm.jpg);
+        /*background-attachment: fixed;*/
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top;
+        /*background-size: cover;*/
+    }
+}
+
+/*header*/
+header {
+    background-color: rgba(190, 21, 21, 0.4);
+}
+
+nav {
+    height: 50px;
+    padding-top: 8px;
+    color: #fff;
+}
+
+nav .logo {
+    float: left;
+    margin: 0 0 0 3%;
+    line-height: 50px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+nav .logo a:hover {
+    color: #fbfac9;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    margin: 0 3%;
+}
+
+nav ul li {
+    /*设置list横行排列*/
+    /*设置line-height之后文字会垂直方向居中*/
+    display: inline-block;
+    padding: 0 10px;
+    line-height: 50px;
+}
+
+nav ul li a {
+    display: inline-block;
+    line-height: 40px;
+    height: inherit;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid #fff;
+}
+
+nav ul li a.active {
+    border-bottom: 3px solid #fff;
+}
+
+.banner {
+    height: 700px;
+    color: #fff;
+}
+
+.banner .inner {
+    position: relative;
+    max-width: 60%;
+    margin: 0 auto;
+    top: 150px;
+    text-align: center;
+}
+
+.banner .inner h1 {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 5% 0;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+
+@media only screen and (max-width: 500px) {
+    .banner .inner h1 {
+        max-width: 200px;
+        margin: 0 auto;
+        padding: 5% 0;
+        font-weight: 500;
+        font-size: 20px;
+        /*border-top: none;*/
+        /*border-bottom: 2px solid #fff;*/
+    }
+}
+
+.banner .inner button {
+    margin: 20% 0 10% 0;
+}
+
+.banner .inner .more {
+    margin-top: 30%;
+}
+/*end of header*/
+
+/*section one*/
+.section-one {
+    padding: 100px 0;
+    background: rgba(48, 158, 148, 0.9);
+}
+
+.section-one .wrapper {
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.section-one .wrapper .hr {
+    margin: 2em auto;
+    width: 50%;
+    border: 1px solid #379c94;
+}
+
+.section-one .wrapper .icon-group {
+    margin-top: 60px;
+ }
+
+.section-one .wrapper .icon-group .icon {
+    display: inline-block;
+    transform: rotate(45deg);
+    width: 100px;
+    height: 100px;
+    margin: 0 5%;
+    box-shadow: 0 0 8px #217972;
+    /*border: 1px solid #5bb7d2;*/
+    /*background-color: grey;*/
+}
+
+.section-one .wrapper .icon-group .icon a {
+    display: inline-block;
+    margin: 38px 0 0 -20px;
+    width: 140px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    transform: rotate(-45deg);
+}
+/*end of section one*/
+
+/*section two*/
+.section-two {
+    background-color: rgba(14, 13, 20, 0.9);
+    color: #fff;
+}
+
+.section-two .article-preview:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.08);
+}
+.section-two .article-preview > div {
+    float: left;
+    /*font-size: 0;*/
+    /*上句清除图片上下之间的空隙*/
+}
+
+.section-two .article-preview .img-section {
+    width: 45%;
+}
+
+.section-two .article-preview .img-section img {
+    width: 100%;
+}
+
+/*.text-section > * {*/
+    /*max-width: 50%;*/
+    /*!*margin-right: 0;*!*/
+/*}*/
+
+.section-two .article-preview .text-section {
+    /*position: relative;*/
+    /*top: 5%;*/
+    /*left: 5%;*/
+    /*实现文字上、左有一定边距，且充满剩余宽度*/
+    /*一定要使用%为单位，原教程的px单位有问题*/
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 50%;
+}
+
+.section-two .article-preview .text-section h2 {
+    /*position: absolute;*/
+    font-size: 1.3em;
+}
+
+@media only screen and (max-width: 550px) {
+    .section-two .article-preview .text-section h2 {
+        font-size: 1em;
+    }
+}
+
+.section-two .article-preview .text-section .sub-heading {
+    font-size: 15px;
+    /*position: absolute;*/
+
+}
+
+@media only screen and (max-width: 550px) {
+    .section-two .article-preview .text-section .sub-heading {
+        margin-top: 5%;
+    }
+}
+/*end of section two*/
+
+/*section three*/
+.section-three {
+    padding: 8%;
+    background-color: rgba(158, 94, 124, 0.9);
+}
+
+.section-three .hr {
+    margin: 3% auto;
+    border: 1px solid #9a647e;
+    width: 60%;
+}
+
+.card-group {
+    margin-top: 50px;
+}
+
+.card {
+    float: left;
+    width: 50%;
+    min-height: 300px;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    padding: 5%;
+}
+
+@media only screen and (max-width: 500px) {
+    .card {
+        float: left;
+        width: 50%;
+        min-height: 150px;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box; /* Firefox */
+        -webkit-box-sizing:border-box; /* Safari */
+        padding: 5%;
+    }
+}
+
+.card:nth-child(1) {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.card:nth-child(2) {
+    background-color: rgba(0, 0, 0, 0.12);
+}
+
+.card:nth-child(3) {
+    background-color: rgba(0, 0, 0, 0.16);
+}
+
+.card:nth-child(4) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.card:nth-child(5) {
+    background-color: rgba(0, 0, 0, 0.24);
+}
+
+.card:nth-child(6) {
+    background-color: rgba(0, 0, 0, 0.28);
+}
+
+/*foot*/
+footer {
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+
+footer .share-group ul {
+    margin: 0 auto;
+    padding: 50px 0 40px 0;
+    list-style: none;
+    text-align: center;
+}
+
+footer .share-group ul li {
+    display: inline-block;
+    margin: 0;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+footer .share-group ul li a:hover {
+    color: #b0acb4;
+}
+
+footer .copy {
+    text-align: center;
+}
+/*end of footer*/
+
+/*遮罩区*/
+.mask {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .4);
+}
+
+/*侧边导航栏*/
+.slideBar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -280px;
+    width: 280px;
+    background: #383838;
+    transition: right .5s;
+}
+
+@media only screen and (max-width: 500px) {
+    .slideBar {
+        width: 200px;
+        right: -200px;
+    }
+}
+
+.slideBar ul {
+    list-style: none;
+    margin: 10% 0 0 0;
+    padding: 0;
+}
+
+.slideBar ul li {
+    padding: 15px 0 10px 20%;
+}
+
+.slideBar ul li:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+.slideBar ul li a {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+}
+/*侧边导航栏结束*/
+
+/*回到顶部*/
+.back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+.back-to-top button {
+    padding: 5px 10px;
+    background-color: #616161;
+    border: 1px solid #bdc2bd;
+}
+/*回到顶部结束*/
+
+/*文章页*/
+.article header .banner {
+    height: 350px;
+}
+.message header.banner{
+    height: 350px;
+}
+
+.article header .banner .inner {
+    position: relative;
+    max-width: 60%;
+    margin: 0 auto;
+    top: 50px;
+    text-align: center;
+}
+
+.article header .banner .inner h1 {
+    border: none;
+}
+
+.article header .banner .inner .sub-heading {
+    margin-top: 0;
+    line-height: 25px;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 450px) {
+    .article header .banner .inner .sub-heading {
+        line-height: 20px;
+        font-size: 0.8em;
+    }
+}
+
+.article .article-wrapper {
+    margin: 0 auto;
+    padding: 20px 8%;
+    background-color: #f8f7f8;
+}
+
+.article .article-info {
+    font-size: 14px;
+    color: #a8a8a8;
+}
+
+article {
+    /*margin: 0 auto;*/
+    padding: 30px 0;
+    line-height: 2;
+    text-align: center;
+}
+

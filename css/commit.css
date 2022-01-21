@@ -1,0 +1,62 @@
+#login-box{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    text-align: center;
+    background: #00000080;
+    padding: 20px 50px;
+}
+
+#login-box h1{
+    color: #ffffff;
+}
+
+#login-box .form{
+    margin-top: 50px;
+}
+
+#login-box .form i{
+    font-size: 18px;
+    color: #ffffff;
+}
+
+#login-box .form .item{
+    margin-top: 15px;
+}
+
+#login-box .form .item .one{
+    width: 180px;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 2px solid #ffffff;
+    padding: 5px 10px;
+    background: #ffffff00;
+    color: #ffffff;
+}
+#login-box .form .item .two{
+    width: 180px;
+    height: 200px;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 2px solid #ffffff;
+    padding: 5px 10px;
+    background: #ffffff00;
+    color: #ffffff;
+}
+
+#login-box button{
+    margin-top: 15px;
+    width: 180px;
+    height: 43px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 0;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #ddbaee 0%, #e8a8ee 33%, #b8d9f8 66%, #59bcf5 100%);
+    border-radius: 15px;
+}
+
+table {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}

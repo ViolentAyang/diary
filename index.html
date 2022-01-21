@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>暴力阿扬的小站</title>
+    <link href="img/icon.ico" rel="shortcut icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello'My world!</title>
+    <script src="./js/A1.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        h2 {
+            color: #222;
+            font-size: 100px;
+        }
+
+        h2 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        h2 span {
+            transition: 0.5s;
+        }
+
+        h2:hover span:nth-child(1) {
+            margin-right: 10px;
+        }
+
+        h2:hover span:nth-child(2) {
+            margin-left: 30px;
+        }
+
+        h2 span:nth-child(1)::after {
+            opacity: 0;
+            transition: 2s;
+        }
+
+        h2:hover span:nth-child(1)::after {
+            content: "'";
+            opacity: 1;
+        }
+
+        h2:hover span {
+            color: white;
+            text-shadow: 0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 40px #fff,
+                0 0 80px #fff;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2 onclick="A1()"><span>Hello</span>"<span> world! </span></h2>
+</body>
+
+</html>
