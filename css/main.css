@@ -192,7 +192,7 @@ nav ul li a.active {
 }
 
 .section-one .wrapper .hr {
-    margin: 2em auto;
+    margin: 0em auto;
     width: 50%;
     border: 1px solid #379c94;
 }
